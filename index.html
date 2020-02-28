@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard météo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Utilisation d'un bootstrap pour le positionnement des différents éléments et faire en sorte que l'interface soit responsive -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Utilisation de leaflet pour la génération de la carte -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/chart.css">
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <svg id="1"></svg>
+    <svg id="2"></svg>
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+    <svg id="station1"></svg>
+    <svg id="station2"></svg>
+  </main>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+  <script type="text/javascript" src="./js/Map.js"></script>
+  <script type="text/javascript" src="./js/chart.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
